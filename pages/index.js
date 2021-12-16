@@ -22,39 +22,39 @@ export default function Home() {
           animate={controls}
           variants={{
             spin: {
-              y: 3,
+              rotate: [-10, 0, 10, 0],
               transition: {
-                ease: "backInOut",
+                ease: "easeInOut",
                 repeat: Infinity,
-                duration: 0.6,
+                duration: 0.3,
               },
             },
             major: {
-              y: 3,
+              rotate: [-10, 0, 10, 0],
               transition: {
-                ease: "backInOut",
-                repeat: 6,
-                duration: 0.6,
+                ease: "easeInOut",
+                repeat: 3,
+                duration: 1,
               },
             },
             minor: {
-              y: 3,
+              rotate: [-10, 0, 10, 0],
               transition: {
-                ease: "backInOut",
-                repeat: 6,
-                duration: 0.6,
+                ease: "easeInOut",
+                repeat: 3,
+                duration: 1,
               },
             },
             lose: {
-              y: 3,
+              rotate: [-10, 0, 10, 0],
               transition: {
-                ease: "backInOut",
-                repeat: 6,
-                duration: 0.6,
+                ease: "easeInOut",
+                repeat: 3,
+                duration: 1,
               },
             },
           }}
-          style={{ originX: "50%", originY: "50%" }}
+          style={{ originX: "top", originY: "50%" }}
         >
           <motion.polygon points="0,0 25,50 50,0"></motion.polygon>
         </motion.svg>
