@@ -191,7 +191,7 @@ export default function Home() {
 
       <div className="flex items-center justify-center mt-12 gap-x-3">
         <button
-          className="bg-black hover:bg-red-500 text-white font-bold py-2 px-4 rounded ease-in duration-150"
+          className="bg-black hover:bg-red-500 text-white font-bold py-2 px-4 rounded transition-colors	ease-in duration-150"
           onClick={async () => {
             await controls.start("start");
             await controls.start("spin");
@@ -201,7 +201,7 @@ export default function Home() {
         </button>
         <div className="mx-6">→</div>
         <button
-          className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded ease-in duration-150"
+          className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded transition-colors ease-in duration-150"
           onClick={() => {
             controls.start("major");
           }}
@@ -209,7 +209,7 @@ export default function Home() {
           Win Major
         </button>
         <button
-          className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded ease-in duration-150"
+          className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded transition-colors	ease-in duration-150"
           onClick={() => {
             controls.start("minor");
           }}
@@ -217,7 +217,7 @@ export default function Home() {
           Win Minor
         </button>
         <button
-          className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ease-in duration-150"
+          className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded transition-colors	ease-in duration-150"
           onClick={() => {
             controls.start("lose");
           }}
