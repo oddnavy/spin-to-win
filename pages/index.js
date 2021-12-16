@@ -24,8 +24,32 @@ export default function Home() {
             spin: {
               y: 3,
               transition: {
-                type: "backInOut",
+                ease: "backInOut",
                 repeat: Infinity,
+                duration: 0.6,
+              },
+            },
+            major: {
+              y: 3,
+              transition: {
+                ease: "backInOut",
+                repeat: 6,
+                duration: 0.6,
+              },
+            },
+            minor: {
+              y: 3,
+              transition: {
+                ease: "backInOut",
+                repeat: 6,
+                duration: 0.6,
+              },
+            },
+            lose: {
+              y: 3,
+              transition: {
+                ease: "backInOut",
+                repeat: 6,
                 duration: 0.6,
               },
             },
