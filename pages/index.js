@@ -21,8 +21,18 @@ export default function Home() {
           viewBox="0 0 50 50"
           animate={controls}
           variants={{
+            start: {
+              rotate: [
+                0, -10, 0, 10, 0, -10, 0, 10, 0, -10, 0, 10, 0, -10, 0, 10, 0,
+              ],
+              transition: {
+                ease: "easeInOut",
+                duration: 1.4,
+                delay: 1.6,
+              },
+            },
             spin: {
-              rotate: [-10, 0, 10, 0],
+              rotate: [0, -10, 0, 10, 0],
               transition: {
                 ease: "easeInOut",
                 repeat: Infinity,
@@ -30,7 +40,7 @@ export default function Home() {
               },
             },
             major: {
-              rotate: [-10, 0, 10, 0],
+              rotate: [0, -10, 0, 10, 0],
               transition: {
                 ease: "easeInOut",
                 repeat: 3,
@@ -38,7 +48,7 @@ export default function Home() {
               },
             },
             minor: {
-              rotate: [-10, 0, 10, 0],
+              rotate: [0, -10, 0, 10, 0],
               transition: {
                 ease: "easeInOut",
                 repeat: 3,
@@ -46,7 +56,7 @@ export default function Home() {
               },
             },
             lose: {
-              rotate: [-10, 0, 10, 0],
+              rotate: [0, -10, 0, 10, 0],
               transition: {
                 ease: "easeInOut",
                 repeat: 3,
