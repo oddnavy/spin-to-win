@@ -69,7 +69,7 @@ export default function Home() {
               rotate: 0,
             },
             start: {
-              rotate: 360,
+              rotate: [0, 360],
               transition: {
                 duration: 3,
                 ease: "backIn",
